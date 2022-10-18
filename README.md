@@ -36,7 +36,7 @@ Here is the current preprocessing strategy:
 | Country | :x: |  | Everything is in Germany |  |
 | Latitude | :interrobang: |  |  | Could be useful but doubt |
 | Longitude | :interrobang: |  |  | Could be useful but doubt |
-| Is Exact Location | :interrobang: |  | Investigate |  |
+| Is Exact Location | :interrobang: |  |  | Doesn't look like useful |
 | Property Type | :heavy_check_mark: |  | Convert to one hot |  |
 | Room Type | :heavy_check_mark: |  | Convert to one hot |  |
 | Accomodates | :heavy_check_mark: |  | Investigate |  |
