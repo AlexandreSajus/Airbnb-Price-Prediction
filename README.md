@@ -39,7 +39,7 @@ Here is the current preprocessing strategy:
 | Is Exact Location | :interrobang: |  |  | Doesn't look like useful |
 | Property Type | :heavy_check_mark: |  | Convert to one hot |  |
 | Room Type | :heavy_check_mark: |  | Convert to one hot |  |
-| Accomodates | :heavy_check_mark: |  | Investigate |  |
+| Accomodates | :heavy_check_mark: |  | Convert to numeric |  |
 | Bathrooms | :heavy_check_mark: |  | Convert to numeric |  |
 | Bedrooms | :heavy_check_mark: |  | Convert to numeric |  |
 | Beds | :heavy_check_mark: |  | Convert to numeric |  |
