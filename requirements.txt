@@ -4,3 +4,4 @@ sklearn
 xgboost
 tensorflow
 ipykernel
+black
