@@ -18,6 +18,13 @@ Current strategy will be **XGB** because:
 - During tabular competitions, XGB generally performed better than other models (e.g. CatBoost, RandomForest, etc.)
 - I won't have to deal with feature scaling
 - I won't have to deal with missing values
+- I won't have to pay attention to multicollinearity
+- I will have some understanding of feature importance
+  
+## **ToDo**
+
+- Cross-validation
+- Benchmark (maybe using constant model with average price)
 
 ## **Current Preprocessing Guidelines**
 
