@@ -24,7 +24,6 @@ Current strategy will be **XGB** because:
 ## **ToDo**
 
 - Cross-validation
-- Benchmark (maybe using constant model with average price)
 
 ## **Current Preprocessing Guidelines**
 
