@@ -3,3 +3,4 @@ pandas
 sklearn
 xgboost
 tensorflow
+ipykernel
