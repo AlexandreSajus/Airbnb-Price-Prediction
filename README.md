@@ -33,7 +33,7 @@ Here is the current preprocessing strategy:
 | City | :x: |  |  | Everything is in Berlin |
 | Postal Code | :heavy_check_mark: |  | Extract average price and maybe convert to one-hot |  |
 | Country Code | :x: |  |  | Everything is in Germany |
-| Country | :heavy_check_mark: |  | Extract average price and maybe convert to one-hot |  |
+| Country | :x: |  | Everything is in Germany |  |
 | Latitude | :interrobang: |  |  | Could be useful but doubt |
 | Longitude | :interrobang: |  |  | Could be useful but doubt |
 | Is Exact Location | :interrobang: |  | Investigate |  |
