@@ -25,8 +25,8 @@ Here is the current preprocessing strategy:
 | Host ID | :x: | Unique ID of the listing host |  |  |
 | Host Name | :x: | Name of the host who manages/owns the listing |  |  |
 | Host Since | :heavy_check_mark: | Date since they have been hosting on Airbnb | convert to numeric - duration to now |  |
-| Host Response Time | :interrobang: | Avg time taken by the host to respond to any query they get | Convert to numeric | Lots of NaN, remove for now |
-| Host Response Rate | :interrobang: | Avg response rate to the queries that the host receives for their listing | Convert to numeric | Lots of NaN, remove for now |
+| Host Response Time | :heavy_check_mark: | Avg time taken by the host to respond to any query they get | Convert to one hot | many NaN |
+| Host Response Rate | :heavy_check_mark: | Avg response rate to the queries that the host receives for their listing | Convert to numeric | many NaN |
 | Is Superhost | :heavy_check_mark: | This field says whether the host is superhost or not. Superhost implies the best-rated host badge given by Airbnb based on the overall listing experience | Convert to bool (currently is "f" or "t") |  |
 | neighbourhood | :heavy_check_mark: | Provides information about neighbourhood of the listing | Extract average price and maybe convert to one-hot |  |
 | Neighborhood Group | :heavy_check_mark: | Provides information about neighbourhood group of the listing | Extract average price and maybe convert to one-hot |  |
@@ -43,7 +43,7 @@ Here is the current preprocessing strategy:
 | Bathrooms | :heavy_check_mark: |  | Convert to numeric |  |
 | Bedrooms | :heavy_check_mark: |  | Convert to numeric |  |
 | Beds | :heavy_check_mark: |  | Convert to numeric |  |
-| Square Feet | :heavy_check_mark: |  | Convert to numeric |  |
+| Square Feet | :x: |  |  | Too many NaN |
 | Guests Included | :heavy_check_mark: |  | Convert to numeric |  |
 | Min Nights | :heavy_check_mark: |  | Convert to numeric |  |
 | Reviews | :heavy_check_mark: |  | Convert to numeric |  |
