@@ -12,9 +12,14 @@ The project guidelines are:
 - Conclude the most appropriate approach to this data set for the predictive task. 
 - Write a report and send it in .pdf format that addresses all these guidelines with a maximum page number of 5 (including figures, tables, and references). We will consider the quality of the writing and presentation of the report.
 
-## **Current Preprocessing Strategy**
+## **Current Strategy**
 
-Since data is tabular, current strategy will be XBG. Preprocessing won't need scaling but will need numeric data
+Current strategy will be **XGB** because:
+- During tabular competitions, XGB generally performed better than other models (e.g. CatBoost, RandomForest, etc.)
+- I won't have to deal with feature scaling
+- I won't have to deal with missing values
+
+## **Current Preprocessing Guidelines**
 
 Here is the current preprocessing strategy:
 
