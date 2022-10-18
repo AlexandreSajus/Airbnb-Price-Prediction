@@ -25,15 +25,15 @@ Here is the current preprocessing strategy:
 | Host ID | :x: | Unique ID of the listing host |  |  |
 | Host Name | :x: | Name of the host who manages/owns the listing |  |  |
 | Host Since | :heavy_check_mark: | Date since they have been hosting on Airbnb | convert to numeric - duration to now |  |
-| Host Response Time | :heavy_check_mark: | Avg time taken by the host to respond to any query they get | Convert to numeric |  |
-| Host Response Rate | :heavy_check_mark: | Avg response rate to the queries that the host receives for their listing |  |  |
-| Is Superhost | :heavy_check_mark: | This field says whether the host is superhost or not. Superhost implies the best-rated host badge given by Airbnb based on the overall listing experience | Convert to binary |  |
-| neighbourhood | :interrobang: | Provides information about neighbourhood of the listing | Analyse it and extract what's useful |  |
-| Neighborhood Group | :interrobang: | Provides information about neighbourhood group of the listing | Analyse it and extract what's useful |  |
-| City | :interrobang: |  | Extract average city price (check if something is not in Berlin first) |  |
-| Postal Code | :heavy_check_mark: |  | Extract average postal code price |  |
-| Country Code | :interrobang: |  | Extract average city price (check if something is not in Germany first) |  |
-| Country | :heavy_check_mark: |  | Extract average city price (check if something is not in Germany first) |  |
+| Host Response Time | :interrobang: | Avg time taken by the host to respond to any query they get | Convert to numeric | Lots of NaN, remove for now |
+| Host Response Rate | :interrobang: | Avg response rate to the queries that the host receives for their listing | Convert to numeric | Lots of NaN, remove for now |
+| Is Superhost | :heavy_check_mark: | This field says whether the host is superhost or not. Superhost implies the best-rated host badge given by Airbnb based on the overall listing experience | Convert to bool (currently is "f" or "t") |  |
+| neighbourhood | :heavy_check_mark: | Provides information about neighbourhood of the listing | Extract average price and maybe convert to one-hot |  |
+| Neighborhood Group | :heavy_check_mark: | Provides information about neighbourhood group of the listing | Extract average price and maybe convert to one-hot |  |
+| City | :x: |  |  | Everything is in Berlin |
+| Postal Code | :heavy_check_mark: |  | Extract average price and maybe convert to one-hot |  |
+| Country Code | :x: |  |  | Everything is in Germany |
+| Country | :heavy_check_mark: |  | Extract average price and maybe convert to one-hot |  |
 | Latitude | :interrobang: |  |  | Could be useful but doubt |
 | Longitude | :interrobang: |  |  | Could be useful but doubt |
 | Is Exact Location | :interrobang: |  | Investigate |  |
@@ -56,6 +56,6 @@ Here is the current preprocessing strategy:
 | Communication Rating | :heavy_check_mark: |  | Convert to numeric |  |
 | Location Rating | :heavy_check_mark: |  | Convert to numeric |  |
 | Value Rating | :heavy_check_mark: |  | Convert to numeric |  |
-| Instant Bookable | :heavy_check_mark: |  | Convert to bool |  |
-| Business Travel Ready | :heavy_check_mark: |  | Convert to bool |  |
+| Instant Bookable | :heavy_check_mark: |  | Convert to bool (currently is "f" or "t") |  |
+| Business Travel Ready | :heavy_check_mark: |  | Convert to bool (currently is "f" or "t") |  |
 | **Price** | :white_check_mark: | **TARGET** | Convert to numeric |  |
