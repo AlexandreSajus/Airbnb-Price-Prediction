@@ -2,17 +2,7 @@
 
 The project aims to predict the price of a night's accommodation offered on the short-term rental website Airbnb in the city of Berlin. This project is derived from a data challenge proposed by dphi.tech.
 
-
-## **Task for the project**
-
-The project guidelines are:
-
-- Apply all approaches taught in the course and practiced in lab sessions (Decision Trees, Bagging, Random forests, Boosting, Gradient Boosted Trees, AdaBoost, etc.) on this data set. The goal is to predict the target variable (price). You can try more advanced approaches if you think that they are adequate. If you do that, please justify the adequation.
-- Compare the performances of all these models (in terms of the adequate accuracy metrics you can output). 
-- Conclude the most appropriate approach to this data set for the predictive task. 
-- Write a report and send it in .pdf format that addresses all these guidelines with a maximum page number of 5 (including figures, tables, and references). We will consider the quality of the writing and presentation of the report.
-
-## **Current Strategy**
+## **Strategy**
 
 Current strategy will be **XGB** because:
 - During tabular competitions, XGB generally performed better than other models (e.g. CatBoost, RandomForest, etc.)
@@ -20,12 +10,25 @@ Current strategy will be **XGB** because:
 - I won't have to deal with missing values
 - I won't have to pay attention to multicollinearity
 - I will have some understanding of feature importance
+
+## **Benchmark**
+
+On a train-test split, using a constant model using the average training price:
+- **Average absolute test error of 30.50€**
+
+## **Current Performance**
+
+On a train-test split, using XGB with default parameters and the preprocessing pipeline described below:
+- **Average absolute test error of 21.60€**
+- **Improves the benchmark by 29%**
   
 ## **ToDo**
 
 - Cross-validation
+- Parameter Tuning
+- Testing other models?
 
-## **Current Preprocessing Guidelines**
+## **Preprocessing Guidelines**
 
 Here is the current preprocessing strategy:
 
@@ -70,3 +73,12 @@ Here is the current preprocessing strategy:
 | Instant Bookable | :heavy_check_mark: |  | Convert to bool (currently is "f" or "t") |  |
 | Business Travel Ready | :heavy_check_mark: |  | Convert to bool (currently is "f" or "t") |  |
 | **Price** | :white_check_mark: | **TARGET** | Convert to numeric |  |
+
+## **Original Guidelines**
+
+The project guidelines are:
+
+- Apply all approaches taught in the course and practiced in lab sessions (Decision Trees, Bagging, Random forests, Boosting, Gradient Boosted Trees, AdaBoost, etc.) on this data set. The goal is to predict the target variable (price). You can try more advanced approaches if you think that they are adequate. If you do that, please justify the adequation.
+- Compare the performances of all these models (in terms of the adequate accuracy metrics you can output). 
+- Conclude the most appropriate approach to this data set for the predictive task. 
+- Write a report and send it in .pdf format that addresses all these guidelines with a maximum page number of 5 (including figures, tables, and references). We will consider the quality of the writing and presentation of the report.
