@@ -40,9 +40,9 @@ On a train-test split, using XGB with default parameters and the preprocessing p
 ## **ToDo**
 
 - Cross-validation
-- Better Feature Engineering
+- Feature selection
 - Parameter Tuning
-- Testing other models
+- Better preprocessing pipeline
 
 ## **Preprocessing Guidelines**
 
