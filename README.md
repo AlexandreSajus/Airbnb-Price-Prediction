@@ -2,6 +2,10 @@
 
 The project aims to predict the price of a night's accommodation offered on the short-term rental website Airbnb in the city of Berlin. This project is derived from a data challenge proposed by dphi.tech.
 
+<p align="center">
+  <img src="media/airbnb.png" alt="AirBnB" width="40%"/>
+</p>
+
 ## **Strategy**
 
 Current strategy will be **XGB** because:
@@ -10,6 +14,10 @@ Current strategy will be **XGB** because:
 - I won't have to deal with missing values
 - I won't have to pay attention to multicollinearity
 - I will have some understanding of feature importance
+
+<p align="center">
+  <img src="media/xgboost.png" alt="XGB" width="40%"/>
+</p>
 
 ## **Benchmark**
 
@@ -73,6 +81,12 @@ Here is the current preprocessing strategy:
 | Instant Bookable | :heavy_check_mark: |  | Convert to bool (currently is "f" or "t") |  |
 | Business Travel Ready | :heavy_check_mark: |  | Convert to bool (currently is "f" or "t") |  |
 | **Price** | :white_check_mark: | **TARGET** | Convert to numeric |  |
+
+Current feature importance is as follows:
+
+<p align="center">
+  <img src="media/feature_importance.png" alt="XGB" width="70%"/>
+</p>
 
 ## **Original Guidelines**
 
