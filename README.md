@@ -3,7 +3,7 @@
 The project aims to predict the price of a night's accommodation offered on the short-term rental website Airbnb in the city of Berlin. This project is derived from a data challenge proposed by dphi.tech.
 
 <p align="center">
-  <img src="media/airbnb.png" alt="AirBnB" width="40%"/>
+  <img src="media/airbnb.png" alt="AirBnB" width="60%"/>
 </p>
 
 ## **Strategy**
@@ -16,7 +16,7 @@ Current strategy will be **XGB** because:
 - I will have some understanding of feature importance
 
 <p align="center">
-  <img src="media/xgboost.png" alt="XGB" width="40%"/>
+  <img src="media/xgboost.png" alt="XGB" width="60%"/>
 </p>
 
 ## **Benchmark**
@@ -85,7 +85,7 @@ Here is the current preprocessing strategy:
 Current feature importance is as follows:
 
 <p align="center">
-  <img src="media/feature_importance.png" alt="XGB" width="70%"/>
+  <img src="media/feature_importance.png" alt="XGB" width="100%"/>
 </p>
 
 ## **Original Guidelines**
