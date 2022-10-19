@@ -6,6 +6,35 @@ The project aims to predict the price of a night's accommodation offered on the 
   <img src="media/airbnb.png" alt="AirBnB" width="60%"/>
 </p>
 
+## **Table of Contents**
+  - [**Problem Statement**](#problem-statement)
+    - [**Important Note**](#important-note)
+  - [**Strategy**](#strategy)
+  - [**Baseline**](#baseline)
+  - [**Current Performance**](#current-performance)
+  - [**Performance Log**](#performance-log)
+  - [**Preprocessing Guidelines**](#preprocessing-guidelines)
+    - [**Preprocessing Strategy**](#preprocessing-strategy)
+    - [**Feature importance**](#feature-importance)
+
+## **Problem Statement**
+
+The goal here is to predict the price of an Airbnb rental in Berlin using features of the listing such as location, number of bedrooms, reviews...
+
+### **Important Note**
+The metric used in this challenge ( RMSE between predicted and actual price ) makes no sense. It measures if the price is close to what other users have proposed which is not optimal.
+
+If the goal was really to build a price predictor for Airbnb, **the metric should measure what price maximises the profit/marketing** of the listing.
+
+A strategy for this goal in mind could be to build a simple decision tree based on marketing guidelines e.g:
+- Start with average price for this neighbourhood and number of bedrooms
+- If not enough reviews, underprice listing to get more sales
+- ...
+
+<p align="center">
+  <img src="media/pricing.png" alt="Pricing" width="60%"/>
+</p>
+
 ## **Strategy**
 
 Current strategy will be **XGB** because of:
@@ -40,10 +69,11 @@ On a train-test split, using XGB with default parameters and the preprocessing p
 | 18-10-2022 | Baseline | 30.50€ | NA | Constant, average price of training set |
 | 18-10-2022 | XGB | 21.60€ | 29% | Default parameters, preprocessing pipeline, overfitting |
 | 19-10-2022 | XGB | 20.60€ | 4% | Hyperparameter Tuning |
+| 19-10-2022 | XGB | 20.50€ | 0.4% | Adds Local Geographic Price using 30 nearest neighbours |
 
 ## **Preprocessing Guidelines**
 
-Here is the current preprocessing strategy:
+### **Preprocessing Strategy**
 
 | Feature | Keep? | Description | Modification | Comment |
 |---|---|---|---|---|
@@ -87,7 +117,7 @@ Here is the current preprocessing strategy:
 | Business Travel Ready | :heavy_check_mark: |  | Convert to bool (currently is "f" or "t") |  |
 | **Price** | :white_check_mark: | **TARGET** | Convert to numeric |  |
 
-Current feature importance is as follows:
+### **Feature importance**
 
 <p align="center">
   <img src="media/feature_importance.png" alt="XGB" width="100%"/>
