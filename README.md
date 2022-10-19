@@ -27,8 +27,8 @@ On a train-test split, using a constant model using the average training price:
 ## **Current Performance**
 
 On a train-test split, using XGB with default parameters and the preprocessing pipeline described below:
-- **Average absolute test error of 21.60€**
-- **Improves the Baseline by 29%**
+- **Average absolute test error of 20.60€**
+- **Improves the Baseline by 32%**
 
 ## **Performance Log**
 
