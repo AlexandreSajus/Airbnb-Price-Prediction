@@ -1,4 +1,4 @@
-# **Course Project: Airbnb Berlin Price Prediction**
+# **Airbnb Berlin Price Prediction**
 
 The project aims to predict the price of a night's accommodation offered on the short-term rental website Airbnb in the city of Berlin. This project is derived from a data challenge proposed by dphi.tech.
 
