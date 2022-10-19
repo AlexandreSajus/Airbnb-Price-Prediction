@@ -35,6 +35,8 @@ A strategy for this goal in mind could be to build a simple decision tree based 
   <img src="media/pricing.png" alt="Pricing" width="60%"/>
 </p>
 
+We will use the error metrics for this challenge but keep in mind that it is not the best metric for this problem.
+
 ## **Strategy**
 
 Current strategy will be **XGB** because of:
