@@ -39,7 +39,7 @@ On a train-test split, using XGB with default parameters and the preprocessing p
   
 ## **ToDo**
 
-- Cross-validation
+- Isolate a test set
 - Feature selection
 - Parameter Tuning
 - Better preprocessing pipeline
