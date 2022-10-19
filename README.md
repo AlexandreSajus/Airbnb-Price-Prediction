@@ -91,12 +91,3 @@ Current feature importance is as follows:
 <p align="center">
   <img src="media/feature_importance.png" alt="XGB" width="100%"/>
 </p>
-
-## **Original Guidelines**
-
-The original project guidelines were:
-
-- Apply all approaches taught in the course and practiced in lab sessions (Decision Trees, Bagging, Random forests, Boosting, Gradient Boosted Trees, AdaBoost, etc.) on this data set. The goal is to predict the target variable (price). You can try more advanced approaches if you think that they are adequate. If you do that, please justify the adequation.
-- Compare the performances of all these models (in terms of the adequate accuracy metrics you can output). 
-- Conclude the most appropriate approach to this data set for the predictive task. 
-- Write a report and send it in .pdf format that addresses all these guidelines with a maximum page number of 5 (including figures, tables, and references). We will consider the quality of the writing and presentation of the report.
