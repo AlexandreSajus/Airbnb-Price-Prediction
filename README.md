@@ -25,12 +25,13 @@ Current strategy will be **XGB** because of:
 
 On a train-test split, using a constant model using the average training price:
 - **Average absolute test error of 30.50€**
+- **Percentage of predictions within 20€ of the true price: 39%** ( average price is 61€ )
 
 ## **Current Performance**
 
 On a train-test split, using XGB with default parameters and the preprocessing pipeline described below:
 - **Average absolute test error of 20.60€**
-- **Improves the Baseline by 32%**
+- **Percentage of predictions within 20€ of the true price: 70%**
 
 ## **Performance Log**
 
