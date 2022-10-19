@@ -6,3 +6,5 @@ tensorflow
 ipykernel
 black
 matplotlib
+pylint
+tqdm
