@@ -8,12 +8,14 @@ The project aims to predict the price of a night's accommodation offered on the 
 
 ## **Strategy**
 
-Current strategy will be **XGB** because:
-- During tabular competitions, XGB generally performed better than other models (e.g. CatBoost, RandomForest, etc.)
-- I won't have to deal with feature scaling
-- I won't have to deal with missing values
-- I won't have to pay attention to multicollinearity
-- I will have some understanding of feature importance
+Current strategy will be **XGB** because of:
+- **Performance:**
+  - In my experience, in tabular competitions, XGB generally performed better than other models (e.g. RandomForest)
+- **Ease of use:**
+  - no need for feature scaling
+  - no need to deal with missing values
+  - no need to pay attention to multicollinearity
+  - plots feature importance
 
 <p align="center">
   <img src="media/xgboost.png" alt="XGB" width="60%"/>
@@ -92,7 +94,7 @@ Current feature importance is as follows:
 
 ## **Original Guidelines**
 
-The project guidelines are:
+The original project guidelines were:
 
 - Apply all approaches taught in the course and practiced in lab sessions (Decision Trees, Bagging, Random forests, Boosting, Gradient Boosted Trees, AdaBoost, etc.) on this data set. The goal is to predict the target variable (price). You can try more advanced approaches if you think that they are adequate. If you do that, please justify the adequation.
 - Compare the performances of all these models (in terms of the adequate accuracy metrics you can output). 
