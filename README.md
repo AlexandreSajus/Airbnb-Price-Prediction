@@ -36,13 +36,7 @@ On a train-test split, using XGB with default parameters and the preprocessing p
 | --- | --- | --- | --- | --- |
 | 18-10-2022 | Baseline | 30.50€ | NA | Constant, average price of training set |
 | 18-10-2022 | XGB | 21.60€ | 29% | Default parameters, preprocessing pipeline, overfitting |
-  
-## **ToDo**
-
-- Isolate a test set
-- Feature selection
-- Parameter Tuning
-- Better preprocessing pipeline
+| 19-10-2022 | XGB | 20.60€ | 4% | Hyperparameter Tuning |
 
 ## **Preprocessing Guidelines**
 
