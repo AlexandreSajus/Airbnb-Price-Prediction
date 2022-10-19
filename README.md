@@ -19,7 +19,7 @@ Current strategy will be **XGB** because:
   <img src="media/xgboost.png" alt="XGB" width="60%"/>
 </p>
 
-## **Benchmark**
+## **Baseline**
 
 On a train-test split, using a constant model using the average training price:
 - **Average absolute test error of 30.50€**
@@ -28,13 +28,13 @@ On a train-test split, using a constant model using the average training price:
 
 On a train-test split, using XGB with default parameters and the preprocessing pipeline described below:
 - **Average absolute test error of 21.60€**
-- **Improves the benchmark by 29%**
+- **Improves the Baseline by 29%**
 
 ## **Performance Log**
 
 | Date | Model | Test Error | Improvement | Comment |
 | --- | --- | --- | --- | --- |
-| 18-10-2022 | Benchmark | 30.50€ | NA | Constant, average price of training set |
+| 18-10-2022 | Baseline | 30.50€ | NA | Constant, average price of training set |
 | 18-10-2022 | XGB | 21.60€ | 29% | Default parameters, preprocessing pipeline, overfitting |
   
 ## **ToDo**
